@@ -12,31 +12,30 @@
       href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
   </head>
   <body>
     <!-- Envelope Screen -->
-    <div id="envelope-container">
+    <button type="button" id="envelope-container" aria-label="Open the letter">
       <img src="envelope.png" alt="Envelope" id="envelope" />
-      <p>♡ Letter for Simmi ♡</p>
-    </div>
+      <span>♡ Letter for Simmi ♡</span>
+    </button>
 
     <!-- Letter Screen -->
     <div id="letter-container">
       <div class="letter-window">
-        <h1 id="letter-title">Simmi will you be my Valentine?</h1>
+        <h1 id="letter-title" tabindex="-1">Simmi will you be my Valentine?</h1>
 
-        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+        <img src="cat_heart.gif" class="cat" id="letter-cat" alt="Cat holding a heart" />
 
         <div class="buttons" id="letter-buttons">
-          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+          <button type="button" class="btn yes-btn" aria-label="Yes"><img src="yes.png" alt="" /></button>
 
           <div class="no-wrapper">
-            <img src="no.png" class="btn no-btn" alt="No" />
+            <button type="button" class="btn no-btn" aria-label="No"><img src="no.png" alt="" /></button>
           </div>
         </div>
 
-        <p id="final-text" class="final-text" style="display: none">
+        <p id="final-text" class="final-text" role="status" style="display: none">
           <strong>Valentine Date:</strong> Sushi at 7-Sisters. Dress fancy!
         </p>
       </div>
